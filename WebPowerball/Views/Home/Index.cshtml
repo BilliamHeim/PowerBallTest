@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <h2>Main Menu</h2>
+    <hr/>
+    <div class="row">
+        <h4>Take a Chance</h4>
+        <p>Pick your numbers and submit your ticket.</p>
+    @Html.ActionLink("Enter Ticket", "EnterNew", null, new { @class = "btn btn-primary", title = "Create a Ticket" })
+    </div>
+    <br/>
+    <div class="row">
+        <h4>Lookup Your Ticket</h4>
+        <p>Go here if you want to lookup your ticket</p>
+        @Html.ActionLink("Lookup Ticket", "FindTicket", null, new { @class = "btn btn-primary", title = "Create a Ticket" })
+    </div>
+    <br/>
+    <div class="row">
+        <h4>Try Your Luck</h4>
+        <p>Are you a winner? Here you can find out</p>
+        @Html.ActionLink("Draw Number", "Draw", null, new { @class = "btn btn-primary", title = "Create a Ticket" })
+    </div>
+</div>

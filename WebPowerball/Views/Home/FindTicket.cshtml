@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "FindTicket";
+}
+
+<h2>FindTicket</h2>
+@using (Html.BeginForm("FindTicket", "Home", FormMethod.Post))
+{
+    <div class="form-group">
+        <label for="id" style="font-weight:bold;">Enter Ticket ID:</label>
+        <input type="number" name="id" class="form-control" />
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+}
+

@@ -1,0 +1,19 @@
+﻿@model WebPowerball.Models.Ticket
+
+@{
+    ViewBag.Title = "DisplayTicket";
+}
+<div class="container">
+    <h2>Display Ticket</h2>
+    <h4>Here's Your Ticket Info</h4>
+    <ul>
+        <li>ID: @Model.ID</li>
+        <li>Name: @Model.Name</li>
+        <li>
+            Numbers: @Model.Numbers[0],@Model.Numbers[1],@Model.Numbers[2]
+            @Model.Numbers[3],@Model.Numbers[4],@Model.Numbers[5]
+        </li>
+    </ul>
+    <br/>
+    @Html.ActionLink("Return Home","Index",null,new { @class="btn btn-primary"})
+</div>

@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "EnterNew";
+}
+
+<h2>Pick Your Ticket</h2>
+<div class="container">
+    @using (Html.BeginForm("EnterNew", "Home", FormMethod.Post))
+    {
+        <div class="row">
+            <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text" name="Name" class="form-control" />
+            </div>
+        </div>
+            <div class="form-group row">
+                <label for="Numbers">Numbers</label>
+                <br />
+                <label for="Numbers" class="text-muted" style="font-size:75%;">Enter 5 numbers (1-69) and a 6th (1-26)</label>
+                </div>
+                <div class="row">
+                    <input type="text" name="Numbers1" class="form-control" style="width:6%; float:left;" />
+                    <input type="text" name="Numbers2" class="form-control" style="width:6%; float:left;"/>
+                    <input type="text" name="Numbers3" class="form-control" style="width:6%; float:left;"/>
+                    <input type="text" name="Numbers4" class="form-control" style="width:6%; float:left;"/>
+                    <input type="text" name="Numbers5" class="form-control" style="width:6%; float:left;"/>
+                    <input type="text" name="Numbers6" class="form-control" style="width:6%; float:left;"/>
+             </div>
+             <br/>
+        <div class="row">
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit Your Ticket</button>
+            </div>
+        </div>
+    }
+</div>
+
